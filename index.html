@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PCresidents</title>
+        <link rel="stylesheet" href="media_bottun.css">
+        <script type="text/javascript" src="medhia_control.js"></script>
+        
+    </head>
+    <body>
+        
+        <div class="background">
+            Residents who
+        </div>
+        <div class="background2">
+            live in the computer.
+        </div>
+        
+        <div class="hoge">
+            <video id="video01" src="./data/616920038.673346.mp4" autoplay muted loop></video>
+            <video id="video02" src="./data/light_on.mp4"></video>
+            <video id="video03" src="./data/light_off.mp4" ></video>
+            <video id="video04" src="./data/speed_up.mp4"></video>
+            <video id="video05" src="./data/speed_down.mp4" ></video>
+            <video id="video06" src="./data/sound_on.mp4"></video>
+            <video id="video07" src="./data/sound_off.mp4" ></video>
+        </div>
+        
+        
+        <div class="btn_wrapper">
+            <div class="stop btn">☼</div>
+            <div class="light_off btn">☉</div>
+            <div class="speed_up btn">▶▶</div>
+            <div class="speed_dowm btn">❙❙</div>
+            <div class="sound_on btn">🔊</div>
+            <div class="sound_off btn">🔉</div>
+        </div>
+        
+        <div class="btn_wrapper2">
+            <div class="stop2 btn2">LIGHT ON</div>
+            <div class="light_off2 btn2">LIGHT OFF</div>
+            <div class="speed_up btn2">SPEED UP</div>
+            <div class="speed_dowm2 btn2">STOP</div>
+            <div class="sound_on btn2">VOLUME UP</div>
+            <div class="sound_off btn2">MUTE</div>
+        </div>
+        
+        
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        
+        <script>
+
+            $(function(){ 
+                $('.stop').click(function(){
+
+                    var video = document.getElementById('video02');
+
+                    $('#video01').hide();
+                    $('#video02').show();
+                    $('#video02')[0].play();
+
+                    video.addEventListener('ended', function() {
+
+                    $('#video02').hide();
+                    $('#video01').show();
+                    $('#video01')[0].play();
+                    
+                    });
+                });
+
+                $('.light_off').click(function(){
+                    
+                    var video = document.getElementById('video03');
+
+                    $('#video01').hide();
+                    $('#video03').show();
+                    $('#video03')[0].play();
+
+                    video.addEventListener('ended', function() {
+
+                    $('#video03').hide();
+                    $('#video01').show();
+                    $('#video01')[0].play();
+                    
+                    });
+                });
+
+                $('.speed_up').click(function(){
+                    
+                    var video = document.getElementById('video04');
+
+                    $('#video01').hide();
+                    $('#video04').show();
+                    $('#video04')[0].play();
+
+                    video.addEventListener('ended', function() {
+
+                    $('#video04').hide();
+                    $('#video01').show();
+                    $('#video01')[0].play();
+                    
+                    });
+                });
+
+                $('.speed_dowm').click(function(){
+                    
+                    var video = document.getElementById('video05');
+
+                    $('#video01').hide();
+                    $('#video05').show();
+                    $('#video05')[0].play();
+
+                    video.addEventListener('ended', function() {
+
+                    $('#video05').hide();
+                    $('#video01').show();
+                    $('#video01')[0].play();
+                    
+                    });
+                });
+
+                $('.sound_on').click(function(){
+                    
+                    var video = document.getElementById('video06');
+
+                    $('#video01').hide();
+                    $('#video06').show();
+                    $('#video06')[0].play();
+
+                    video.addEventListener('ended', function() {
+
+                    $('#video06').hide();
+                    $('#video01').show();
+                    $('#video01')[0].play();
+                    
+                    });
+                });
+
+                $('.sound_off').click(function(){
+                    
+                    var video = document.getElementById('video07');
+
+                    $('#video01').hide();
+                    $('#video07').show();
+                    $('#video07')[0].play();
+
+                    video.addEventListener('ended', function() {
+
+                    $('#video07').hide();
+                    $('#video01').show();
+                    $('#video01')[0].play();
+                    
+                    });
+                });
+            });
+            
+            
+        </script>
+    </body>
+</html>
