@@ -1,0 +1,126 @@
+.background {
+  line-height: 100vh;
+  text-align: center;
+  color: white;
+  position: fixed;
+  width: 19%;
+  height: 100vw;
+  background-color: black;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.background2 {
+  line-height: 100vh;
+  text-align: center;
+  color: white;
+  position: fixed;
+  width: 19%;
+  height: 100vw;
+  background-color: black;
+  right:0;
+  font-size: 20px;
+  
+}
+
+html, body { height:100%; margin:0; }
+
+#play {
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+.hoge {
+    text-align: center;
+    margin-top: 0px;
+    height: 540px;
+}
+
+.btn_wrapper {
+  width: 960px;
+  padding-top: 20px;
+  margin: 0 auto;
+  display: flex;
+  background-color: black;
+}
+
+.btn {
+  text-align: center;
+  width: 500px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  line-height: 50px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 1px solid;
+  border-color: white;
+}
+
+.btn_wrapper2 {
+  line-height: 5px;
+  height: 100px;
+  width: 960px;
+  padding-top: 20px;
+  margin: 0 auto;
+  display: flex;
+  background-color: black;
+}
+
+.btn2 {
+  text-align: center;
+  width: 500px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  line-height: 30px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 15px;
+}
+.btn:hover {
+  background-color: rgb(100, 100, 100);
+}
+
+.btn:active {
+  background-color: brown;
+}
+
+.stop,.light_off  {
+font-size: 30px;
+}
+
+
+.speed_dowm {
+  font-size: 25px;
+}
+
+#video02 {
+ display: none;
+}
+
+#video03 {
+ display: none;
+}
+
+#video04 {
+ display: none;
+}
+
+#video05 {
+ display: none;
+}
+
+#video06 {
+ display: none;
+}
+
+#video07 {
+  display: none;
+}
+
+
