@@ -17,35 +17,35 @@
             live in the computer.
         </div>
         
-        <div class="hoge">
-            <video id="video01" src="./data/616920038.673346.mp4" autoplay muted loop></video>
-            <video id="video02" src="./data/light_on.mp4"></video>
-            <video id="video03" src="./data/light_off.mp4" ></video>
-            <video id="video04" src="./data/speed_up.mp4"></video>
-            <video id="video05" src="./data/speed_down.mp4" ></video>
-            <video id="video06" src="./data/sound_on.mp4"></video>
-            <video id="video07" src="./data/sound_off.mp4" ></video>
+        <div class="btnwrap">
+            <div class="hoge">
+                <video id="video01" src="./data/616920038.673346.mp4" autoplay muted loop></video>
+                <video id="video02" src="./data/light_on.mp4"></video>
+                <video id="video03" src="./data/light_off.mp4" ></video>
+                <video id="video04" src="./data/speed_up.mp4"></video>
+                <video id="video05" src="./data/speed_down.mp4" ></video>
+                <video id="video06" src="./data/sound_on.mp4"></video>
+                <video id="video07" src="./data/sound_off.mp4" ></video>
+            </div>
+            
+            <div class="btn_wrapper">
+                <div class="stop btn">☼</div>
+                <div class="light_off btn">☉</div>
+                <div class="speed_up btn">▶▶</div>
+                <div class="speed_dowm btn">❙❙</div>
+                <div class="sound_on btn">🔊</div>
+                <div class="sound_off btn">🔉</div>
+            </div>
+            
+            <div class="btn_wrapper2">
+                <div class="stop2 btn2">LIGHT ON</div>
+                <div class="light_off2 btn2">LIGHT OFF</div>
+                <div class="speed_up btn2">SPEED UP</div>
+                <div class="speed_dowm2 btn2">STOP</div>
+                <div class="sound_on btn2">VOLUME UP</div>
+                <div class="sound_off btn2">MUTE</div>
+            </div>
         </div>
-        
-        
-        <div class="btn_wrapper">
-            <div class="stop btn">☼</div>
-            <div class="light_off btn">☉</div>
-            <div class="speed_up btn">▶▶</div>
-            <div class="speed_dowm btn">❙❙</div>
-            <div class="sound_on btn">🔊</div>
-            <div class="sound_off btn">🔉</div>
-        </div>
-        
-        <div class="btn_wrapper2">
-            <div class="stop2 btn2">LIGHT ON</div>
-            <div class="light_off2 btn2">LIGHT OFF</div>
-            <div class="speed_up btn2">SPEED UP</div>
-            <div class="speed_dowm2 btn2">STOP</div>
-            <div class="sound_on btn2">VOLUME UP</div>
-            <div class="sound_off btn2">MUTE</div>
-        </div>
-        
         
         
         
@@ -55,7 +55,9 @@
         <script>
 
             $(function(){ 
+                    $('.btnwrap').outerHeight($(window).height());
                 $('.stop').click(function(){
+
 
                     var video = document.getElementById('video02');
 
